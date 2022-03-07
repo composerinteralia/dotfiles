@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -x
+
+if [[ "$CODESPACES" = "true" ]]; then
+  sudo apt-get install -y \
+    fzf \
+    rcm \
+    zsh
+
+  rcup -f -t codespaces
+  chsh -s /bin/zsh root
+elif [[ "$(uname)" = "Darwin" ]]; then
+  echo "error: still using dotfiles-local for now"
+  exit 1
+else
+  echo "error: Unknown system"
+  exit 1
+fi
