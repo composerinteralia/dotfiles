@@ -1,5 +1,6 @@
-source ~/.zsh/configs/colors.zsh
-source ~/.zsh/configs/editor.zsh
-source ~/.zsh/configs/prompt.zsh
+source ~/.zsh/colors.zsh
+source ~/.zsh/editor.zsh
+source ~/.zsh/prompt.zsh
+source ~/.zsh/path.zsh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
