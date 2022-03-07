@@ -1,3 +1,4 @@
+source ~/.zsh/configs/colors.zsh
 source ~/.zsh/configs/editor.zsh
 source ~/.zsh/configs/prompt.zsh
 
