@@ -2,7 +2,7 @@
 
 exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
-set -x
+set -euxo pipefail
 
 if [[ "$CODESPACES" = "true" ]]; then
   sudo apt-get install -y \
