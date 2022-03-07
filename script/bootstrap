@@ -10,7 +10,7 @@ if [[ "$CODESPACES" = "true" ]]; then
     rcm \
     zsh
 
-  rcup -f -t codespaces
+  rcup -f -v -d . -t codespaces
   chsh -s /bin/zsh root
 elif [[ "$(uname)" = "Darwin" ]]; then
   echo "error: still using dotfiles-local for now"
