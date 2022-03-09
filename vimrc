@@ -1,3 +1,10 @@
+" Use color scheme from https://github.com/arcticicestudio/nord-vim
+colorscheme nord
+
+" automatically rebalance windows on resize
+autocmd! VimResized
+autocmd VimResized * :wincmd =
+
 let mapleader = " "
 
 " Edit a file  in the current directory
@@ -24,5 +31,11 @@ if executable('ag')
   command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
   nnoremap \ :Ag<SPACE>
 endif
+
+" Make splitjoin behave reasonably
+let g:splitjoin_ruby_curly_braces = 0
+let g:splitjoin_ruby_hanging_args = 0
+let g:splitjoin_ruby_trailing_comma = 0
+let g:splitjoin_ruby_options_as_arguments = 1
 
 source ~/.vimrc.bundles
