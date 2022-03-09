@@ -6,6 +6,7 @@ endif
 call plug#begin('~/.vim/bundle')
 
 Plug 'janko-m/vim-test'
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-surround'
 
 call plug#end()
