@@ -1,7 +1,7 @@
 source ~/.vimrc.bundles
 
 " Use color scheme from https://github.com/arcticicestudio/nord-vim
-colorscheme nord
+silent! colorscheme nord
 
 set autowrite " automatically write file before commands that switch files
 set nomodeline " https://security.stackexchange.com/questions/36001/vim-modeline-vulnerabilities
