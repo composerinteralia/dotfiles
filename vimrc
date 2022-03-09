@@ -1,3 +1,5 @@
+source ~/.vimrc.bundles
+
 " Use color scheme from https://github.com/arcticicestudio/nord-vim
 colorscheme nord
 
@@ -38,4 +40,3 @@ let g:splitjoin_ruby_hanging_args = 0
 let g:splitjoin_ruby_trailing_comma = 0
 let g:splitjoin_ruby_options_as_arguments = 1
 
-source ~/.vimrc.bundles
