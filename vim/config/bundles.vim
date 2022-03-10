@@ -1,10 +1,11 @@
+" Install vim-plug if not already installed
+" https://github.com/junegunn/vim-plug/wiki/tips#automatic-installation
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent execute '!curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
 
 call plug#begin('~/.vim/bundle')
-
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'arcticicestudio/nord-vim'
 Plug 'janko-m/vim-test'
@@ -27,5 +28,10 @@ Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
-
 call plug#end()
+
+" Configure plugins
+source ~/.vim/config/bundles/fzf.vim
+source ~/.vim/config/bundles/nord.vim
+source ~/.vim/config/bundles/splitjoin.vim
+source ~/.vim/config/bundles/vim-test.vim
