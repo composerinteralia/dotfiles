@@ -11,7 +11,7 @@ if [[ "$CODESPACES" = "true" ]]; then
     zsh
 
   RCRC=$(pwd)/rcrc rcup -f -v -d . -t codespaces
-  chsh -s /bin/zsh root
+  sudo chsh -s /bin/zsh $(whoami)
   vim +PlugInstall +qa
 elif [[ "$(uname)" = "Darwin" ]]; then
   echo "error: still using dotfiles-local for now"
