@@ -8,6 +8,7 @@ if [[ "$CODESPACES" = "true" ]]; then
   sudo apt-get install -y \
     fzf \
     rcm \
+    universal-ctags \
     zsh
 
   RCRC=$(pwd)/rcrc rcup -f -v -d . -t codespaces
