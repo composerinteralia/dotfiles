@@ -8,6 +8,7 @@ if [[ "$CODESPACES" = "true" ]]; then
   sudo apt-get install -y \
     fzf \
     rcm \
+    silversearcher-ag \
     universal-ctags \
     zsh
 
