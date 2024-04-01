@@ -3,5 +3,4 @@ alias pbcopy="rdm copy"
 
 export BOOTSTRAP_FAST=1
 export SKIP_NODE=1
-export SERVICEOWNERS_SKIP=1
-export RUBOCOP_SKIP=1
+export SKIP_ALL_PREPUSH_CHECKS=1
