@@ -1,0 +1,32 @@
+[init]
+  defaultBranch = main
+[color]
+  ui = auto
+[commit]
+  gpgsign = true
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+  untrackedcache = true
+[credentials]
+  helper = osxkeychain
+[credential "https://github.com"]
+  helper = !/usr/local/bin/gh auth git-credential
+[diff]
+  colorMoved = zebra
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
+[github]
+  user = composerinteralia
+[merge]
+  ff = only
+[pull]
+  ff = only
+[push]
+  default = current
+[user]
+  name = Daniel Colson
+  email = danieljamescolson@gmail.com
+  signingkey = 88A364BBE77B1353
