@@ -4,7 +4,7 @@ exec > >(tee -i $HOME/dotfiles_install.log)
 exec 2>&1
 set -euxo pipefail
 
-if [[ "$CODESPACES" = "true" ]]; then
+if [[ "${CODESPACES:-false}" = "true" ]]; then
   sudo apt-get install -y \
     fzf \
     rcm \
