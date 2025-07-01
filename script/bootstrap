@@ -14,15 +14,10 @@ if [[ "$CODESPACES" = "true" ]]; then
 
   RCRC=$(pwd)/rcrc rcup -f -v -d . -t codespaces
 
-  wget https://github.com/BlakeWilliams/remote-development-manager/releases/latest/download/rdm-linux-amd64
-  mv rdm-linux-amd64 ~/.bin/rdm
-  chmod +x ~/.bin/rdm
-
   sudo chsh -s /bin/zsh $(whoami)
   vim +PlugInstall +qa
 elif [[ "$(uname)" = "Darwin" ]]; then
-  echo "error: still using dotfiles-local for now"
-  exit 1
+  script/bootstrap-macos
 else
   echo "error: Unknown system"
   exit 1
