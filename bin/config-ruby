@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+
+cd ~/code/ruby/ruby/build
+
+name=${1:-ruby-master}
+
+../configure  \
+  --prefix="${HOME}/.rubies/$name" \
+  --disable-install-doc \
+  --with-openssl-dir=$(brew --prefix openssl) \
+  --enable-yjit=dev \
+  --enable-zjit=dev \
+  --enable-debug-env optflags="-O0 -fno-omit-frame-pointer"
+

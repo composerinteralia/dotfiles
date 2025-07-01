@@ -1,0 +1,29 @@
+#!/usr/bin/env ruby -w
+
+templates = %w[
+action_controller
+action_mailbox
+action_mailer
+action_view
+active_job
+active_record
+active_record_migrations
+active_storage
+benchmark
+generic
+].zip(0..).to_h.invert
+
+puts "Choose a reproduction script template"
+templates.each do |index, template|
+  puts "#{index}) #{template}"
+end
+
+template = templates[Integer(gets)]
+
+url = "https://raw.githubusercontent.com/rails/rails/main/guides/bug_report_templates/#{template}.rb"
+output = "#{template}_reproduction_#{Time.now.to_i}_test.rb"
+
+`curl #{url} -o #{output}`
+`echo "#{output}" | pbcopy`
+
+puts "\nTemplate written to #{output}"
