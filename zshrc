@@ -6,5 +6,6 @@ source ~/.zsh/path.zsh
 source ~/.zsh/prompt.zsh
 
 [[ -s ~/.zshrc.codespaces ]] && source ~/.zshrc.codespaces
+[[ -s ~/.zshrc.macos ]] && source ~/.zshrc.macos
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
