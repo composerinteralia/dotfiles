@@ -1,5 +1,5 @@
 [commit]
-  # gpgsign = true
+  gpgsign = true
 [credential "https://github.com"]
   helper = !/usr/bin/env gh auth git-credential
 [github]
