@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+if [ ! -f ~/.rubies/ruby-master/bin/ruby ] ; then
+  echo "Development Ruby not built to ~/.rubies/ruby-master"
+  exit 1
+fi
+
+if [[ $# -eq 0 ]] ; then
+  echo "Provide program as the first argument ($(ls -m ~/.rubies/ruby-master/bin))"
+  exit 2
+fi
+
+program=$1
+shift 1
+
+echo "~/.rubies/ruby-master/bin/$program "$@""
+~/.rubies/ruby-master/bin/$program "$@"
