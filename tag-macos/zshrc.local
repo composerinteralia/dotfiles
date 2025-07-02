@@ -1,1 +1,4 @@
 alias notes='cd ~/notes; git pull; vim in.txt; git add -A; git commit -m "Update"; git push; cd -'
+
+# Load asdf
+. "$(brew --prefix asdf)/libexec/asdf.sh"
