@@ -8,6 +8,7 @@ name=${1:-ruby-master}
   --prefix="${HOME}/.rubies/$name" \
   --disable-install-doc \
   --with-openssl-dir=$(brew --prefix openssl) \
+  --with-libyaml-dir=$(brew --prefix libyaml) \
   --enable-yjit=dev \
   --enable-zjit=dev \
   --enable-debug-env optflags="-O0 -fno-omit-frame-pointer"
