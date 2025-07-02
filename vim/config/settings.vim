@@ -5,3 +5,5 @@ set nomodeline
 set modelines=0
 
 set noswapfile
+
+set tags^=.git/tags
