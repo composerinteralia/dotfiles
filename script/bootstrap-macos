@@ -129,7 +129,7 @@ cask "gpg-suite-no-mail"
 brew "graphviz"
 brew "ragel"
 brew "tree"
-brew "autoconf
+brew "autoconf"
 EOF
 
 fancy_echo "Configuring asdf version manager ..."
